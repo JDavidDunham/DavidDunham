@@ -1,0 +1,276 @@
+/* 
+Author:         David Dunham
+Course:         ITSE 2302 - 21001
+Assignment:     LAB 5 (Final Project)
+Date Created:   04/14/2025
+Date Updated:   05/11/2025
+File Name:      css_styles.css
+Description:    CSS layout Page for Childers Speed Shop.
+*/
+
+
+/* 	=====================================================================
+							              HTML and Body Styles
+	  =====================================================================
+*/
+
+body {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* 	=====================================================================
+							          Header and Navigation Styles
+	  =====================================================================
+*/
+
+header {
+  display: block;
+  width: 100%;
+}
+
+#logo {
+  display: block;
+  margin: auto;
+}
+
+header nav {
+  display: block;
+  width: 100%;
+}
+
+nav a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 13.9%;
+  vertical-align: middle;
+  padding-left: 1em;
+}
+
+.internal a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 12%;
+  border: 2px solid #000000;
+}
+
+
+/* 	=====================================================================
+							            Article and Main Styles
+	  =====================================================================
+*/
+
+#clock {
+  text-align: center;
+  border: 2px solid #008000;
+}
+
+article, main {
+  display: block;
+  float: left;
+  padding: 5%;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  line-height: 2em;
+}
+
+#left {
+  display: block; 
+  float: left; 
+  width: 25%; 
+  margin: 2% 0 0 0;
+}
+
+#left address {
+  font-weight: bold; 
+  margin-top: 0.5em;
+}
+
+#right {
+  display: block; 
+  float: right;
+  padding-top: 1.5em;
+}
+
+article p, main p {
+  padding: 1em 0 2em o;
+}
+
+#aup {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#aup dd {
+  padding: 0.8em;
+}
+
+#parts {
+  padding-left: 45%
+}
+
+#race {
+  padding-left: 45%
+}
+
+#orgs {
+  padding-left: 45%;
+}
+
+#other {
+  padding-left: 45%;
+}
+
+.cats {
+  padding-left: 40%;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+.categories {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+#cust_info {
+  padding: 0 15% 0 15%;
+}
+
+#submit {
+  padding-left: 40%;
+}
+
+#cites {
+  padding-left: 5%;
+}
+
+#location {
+  border: 1px solid #000000;
+}
+
+
+/* 	=====================================================================
+							          Table Styles
+	  =====================================================================
+*/
+
+#opHours {
+  margin: 1em 0 1em 0;
+}
+
+#opHours .day {
+  padding-right: 0.5em;
+}
+
+#services {
+  display: table;
+  border: 5px solid #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#services tr td {
+  border: 1px solid;
+  border-collapse: collapse;
+  height: 1em;
+}
+
+.head {
+  text-align: center;
+}
+
+.type {
+  text-align: justify;
+  width: 23%;
+}
+
+.time {
+  text-align: center;
+  width: 10%;
+}
+
+.desc {
+  padding-left: 1%;
+}
+
+
+/* 	=====================================================================
+							          Footer and Site Map Styles
+	  =====================================================================
+*/
+
+footer {
+  width: 100%;
+}
+
+footer figcaption {
+  display: block; 
+  float: left; 
+  width: 100%; 
+  border-top: 5px solid #008000;
+}
+
+footer figcaption p {
+  text-align: center;
+  padding-top: 1em;
+}
+
+#current_date {
+  padding-bottom: 1em;
+}
+
+#left_links {
+  display: block; 
+  float: left; 
+  margin: 2% 0 5% 20%;
+  width: 25%;
+}
+
+#left_links p {
+  color: #008000;
+  padding-bottom: 1em;
+}
+
+#left_links a {
+  text-decoration: none;
+}
+
+#center_links { 
+  display: block; 
+  float: left;
+  margin: 2% 0 5% 0;
+  width: 25%;
+}
+
+#center_links p {
+  color: #008000;
+  padding-bottom: 1em;
+}
+
+#center_links a {
+  text-decoration: none;
+}
+
+#right_links { 
+  display: block; 
+  float: left;
+  margin: 2% 0 5% 0;
+  width: 25%;
+}
+
+#right_links p {
+  color: #008000;
+  padding-bottom: 1em;
+}
+
+#right_links a {
+  text-decoration: none;
+}

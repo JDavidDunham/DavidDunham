@@ -1,0 +1,39 @@
+/* 
+Author:         David Dunham
+Course:         ITSE 2302 - 21001
+Assignment:     LAB 5 (Final Project)
+Date Created:   04/14/2025
+Date Updated:   04/14/2025
+File Name:      jdd_reset.css
+Description:    CSS Reset Styles for Childers Speed Shop.
+*/
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul,
+table, tr, td, th, col, colgroup {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+
+/* Set the default page element styles */
+
+body {
+   line-height: 1.2em;
+}
+
+nav a {
+   text-decoration: none;
+}

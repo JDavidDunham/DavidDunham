@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <!-- 
+        Author:         David Dunham
+        Course:         ITSE 2302
+        Assignment:     LAB 5 (Final Project)
+        Date Created:   04/14/2025
+        Date Updated:   05/09/2025
+        File Name:      jdd_aboutus.html
+        Description:    Individual Web Page assignment for Childers Speed Shop.
+    -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Childers Automotive Speed Shop - About Us</title>
+    <link rel="stylesheet" href="jdd_reset.css">
+    <link rel="stylesheet" href="jdd_layout.css">
+    <link rel="stylesheet" href="jdd_styles.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/jdd_logo.png" id="logo" alt="Childers Speed Shop Logo" href="index.html">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="jdd_about.html">About Us</a>
+                <a href="jdd_contact.html">Contact Us</a>
+                <a href="jdd_gallery.html">Gallery</a>
+                <a href="jdd_table.html">Services</a>
+                <a href="jdd_form.html">Build Form</a>
+                <a href="jdd_links.html">Links</a>
+            </nav>
+        </header>
+
+        <article>
+            <h1>Our Story</h1>
+            <p>
+                Childers Speed Shop was originally founded 11 years ago by Thomas Childers, a single father who had two goals:<br />
+                <ol style="padding: 1em 10% 1em 10%;">
+                    <li>support his two daughters to give them the best lives he possibly could</li>
+                    <li>live out his dream of building quality vehicles</li>
+                </ol> 
+                Thus, Childers Speed Shop was born. 
+                
+            </p>
+
+            <p>
+                Today, we operate out of an 1,800 square foot shop offering expertise in automotive engine rebuilds, 
+                part machining, and building your project with absolute excellence in automotive performance. 
+            </p>
+        </article>
+
+        <footer>
+			<figcaption>
+				<p>
+                    Childers Speed Shop &nbsp; Lewisville, TX &copy; 2025 &nbsp; use this icon 
+                    <a href="mailto:thomas@childersspeedshop.com"><img src="images/jdd_email.png"></a>
+					 to email thomas@childersspeedshop.com <br /><br /> Last Updated: 05/11/2025</p>
+				<p id="current_date"></p>
+				<script>
+					//script to display the current time on the users computer
+					var now = new Date();
+					document.getElementById("current_date").innerHTML = now;
+				</script>
+			</figcaption>
+
+            <hr style="width: 100%;">
+
+            <div id="left_links">
+                <p><strong>Shop</strong></p>
+                <a href="index.html">Home</a><br /><br />
+                <a href="jdd_about.html">About Us</a><br /><br />
+                <a href="jdd_gallery.html">Gallery</a><br /><br />
+            </div>
+            <div id="center_links">
+                <p><strong>Contact Us</strong></p>
+                <a href="jdd_table.html">Services</a><br /><br />
+                <a href="jdd_contact.html">Contact Us</a><br /><br />
+                <a href="jdd_form.html">Build Form</a><br /><br />
+            </div>
+            <div id="right_links">
+                <p><strong>Resources</strong></p>
+                <a href="jdd_links.html">Links</a><br /><br />
+                <a href="jdd_design.html" target="_blank">Design Document</a><br /><br />
+                <a href="https://www.tccd.edu/">TCC - Home</a><br /><br />
+            </div>
+        </footer>
+    </body>
+</html>

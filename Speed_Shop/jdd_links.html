@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 
+            Author:         David Dunham
+            Course:         ITSE 2302
+            Assignment:     LAB 5 (Final Project)
+            Date Created:   04/14/2025
+            Date Updated:   04/14/2025
+            File Name:      xxx_links.html
+            Description:    Links Page for Childers Speed Shop.
+        -->
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Childers Automotive Speed Shop - Links</title>
+        <link rel="stylesheet" href="jdd_reset.css">
+        <link rel="stylesheet" href="jdd_layout.css">
+        <link rel="stylesheet" href="jdd_styles.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/jdd_logo.png" id="logo" alt="Childers Speed Shop Logo" href="index.html">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="jdd_about.html">About Us</a>
+                <a href="jdd_contact.html">Contact Us</a>
+                <a href="jdd_gallery.html">Gallery</a>
+                <a href="jdd_table.html">Services</a>
+                <a href="jdd_form.html">Build Form</a>
+                <a href="jdd_links.html">Links</a>
+            </nav>
+        </header>
+
+        <article>
+                <h1>Automotive Parts and Links</h1>
+                <dl>
+                    <dt class="cats"><strong>Auto Parts</strong></dt>
+                    <dd>
+                        <ul id="parts">
+                            <li><a href="https://www.carparts.com/" target="_blank">Car Parts Online Store</a></li> <!-- Car Parts dot com -->
+                            <li><a href="https://www.napaonline.com/" target="_blank">Napa Auto Parts</a></li> <!-- Napa -->
+                            <li><a href="https://www.oreillyauto.com/" target="_blank">O'Reilly Auto Parts</a></li> <!-- O'Reilly -->
+                            <li><a href="https://www.summitracing.com/" target="_blank">Summit Racing Equipment</a></li> <!-- Summit Racing -->
+                        </ul>
+                    </dd>
+
+                    <dt class="cats"><strong>Racing Events</strong></dt>
+                    <dd>
+                        <ul id="race">
+                            <li><a href="https://www.nhra.com/nhra" target="_blank">National Hot Rod Association</a></li> <!-- Drag Racing -->
+                            <li><a href="https://www.formula1.com/" target="_blank">F1 - Formula 1 Racing</a></li> <!-- Formula 1 --> 
+                            <li><a href="https://www.nascar.com/" target="_blank">NASCAR</a></li> <!-- NASCAR -->
+                        </ul>  
+                    </dd>
+
+                    <dt class="cats"><strong>Car Clubs and Organizations</strong></dt>
+                    <dd>
+                        <ul id="orgs">
+                            <li><a href="https://aaca.org/" target="_blank">Antique Automobile Club of America</a></li> <!-- Antique Automobile Club -->
+                            <li><a href="https://www.classiccarclub.org/" target="_blank">Classic Car Club of America</a></li> <!-- Classic Car Club -->
+                            <li><a href="https://exoticdriveclub.com/" target="_blank">Exotic Drive Club</a></li> <!-- Exotic Drive Club -->
+                            <li><a href="https://musclecarclub.com/" target="_blank">Muscle Car Club</a></li> <!-- Muscle Car Club -->
+                            <li><a href="https://www.scca.com/" target="_blank">Sports Car Club of America</a></li> <!-- Sports Car Club -->
+                        </ul>
+                    </dd>
+                
+                    <dt class="cats"><strong>Other Links</strong></dt>
+                    <dd>
+                        <ul id="other">
+                            <li><a href="https://www.mozilla.org/en-US/" target="_blank">Mozilla</a></li>
+                            <li><a href="https://www.microsoft.com/en-us/" target="_blank">Microsoft</a></li>
+                        </ul>
+                    </dd>
+            </dl>
+        </article>
+
+        <footer>
+			<figcaption>
+				<p>
+                    Childers Speed Shop &nbsp; Lewisville, TX &copy; 2025 &nbsp; use this icon 
+                    <a href="mailto:thomas@childersspeedshop.com"><img src="images/jdd_email.png"></a>
+					 to email thomas@childersspeedshop.com <br /><br /> Last Updated: 05/11/2025</p>
+				<p id="current_date"></p>
+				<script>
+					//script to display the current time on the users computer
+					var now = new Date();
+					document.getElementById("current_date").innerHTML = now;
+				</script>
+			</figcaption>
+
+            <hr style="width: 100%;">
+
+            <div id="left_links">
+                <p><strong>Shop</strong></p>
+                <a href="index.html">Home</a><br /><br />
+                <a href="jdd_about.html">About Us</a><br /><br />
+                <a href="jdd_gallery.html">Gallery</a><br /><br />
+            </div>
+            <div id="center_links">
+                <p><strong>Contact Us</strong></p>
+                <a href="jdd_table.html">Services</a><br /><br />
+                <a href="jdd_contact.html">Contact Us</a><br /><br />
+                <a href="jdd_form.html">Build Form</a><br /><br />
+            </div>
+            <div id="right_links">
+                <p><strong>Resources</strong></p>
+                <a href="jdd_links.html">Links</a><br /><br />
+                <a href="jdd_design.html" target="_blank">Design Document</a><br /><br />
+                <a href="https://www.tccd.edu/" target="_blank">TCC - Home</a><br /><br />
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <!-- 
+        Author:         David Dunham
+        Course:         ITSE 2302
+        Assignment:     LAB 5 (Final Project)
+        Date Created:   04/14/2025
+        Date Updated:   04/14/2025
+        File Name:      xxx_form.html
+        Description:    Individual Web Page assignment for Childers Speed Shop.
+    -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Childers Automotive Speed Shop - New Build Form</title>
+    <link rel="stylesheet" href="jdd_reset.css">
+    <link rel="stylesheet" href="jdd_layout.css">
+    <link rel="stylesheet" href="jdd_styles.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/jdd_logo.png" id="logo" alt="Childers Speed Shop Logo" href="index.html">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="jdd_about.html">About Us</a>
+                <a href="jdd_contact.html">Contact Us</a>
+                <a href="jdd_gallery.html">Gallery</a>
+                <a href="jdd_table.html">Services</a>
+                <a href="jdd_form.html">Build Form</a>
+                <a href="jdd_links.html">Links</a>
+            </nav>
+        </header>
+
+        <main id="back">
+            <h1>New Build Form</h1>
+
+            <form id="cust_info" name="cust_form" onsubmit="return(validateForm());" autocomplete="on">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="first">First Name</label><br />
+                    <input type="text" id="first" name="first" onclick="validateFname()"/><br /> <!-- Textbox -->
+                    <br />
+                    <label for="last">Last Name</label><br />
+                    <input type="text" id="last" name="last" onclick="validateLname()"/><br /> <!-- Textbox -->
+                    <br />
+                    <label for="address">Address</label><br />
+                        <input type="text" id="address" name="address" onclick="validateRoad()"/><br /> <!-- Textbox -->
+                    <br />
+                    <label for="city">City</label><br />
+                        <input type="text" id="city" name="city" onclick="validateCity()"/><br /> <!-- Textbox -->
+                    <br />
+                    <label for="state">State</label><br />
+                        <input type="text" id="state" name="state" onclick="validateState()"/><br /> <!-- Textbox -->
+                    <br />
+                    <label for="zip">Zip code</label><br />
+                        <input type="text" id="zip" name="zip" onclick="validateZipcode()"/><br /> <!-- Textbox -->
+                    <br />
+                    <label for="phone">Phone</label><br />
+                        <input type="tel" id="phone" name="phone" placeholder="(123) 456 - 7890" pattern="[0-9] {3} - [0-9]{3} - [0-9]{4}"
+                        onclick="validatePhone()"/><br /> <!-- Textbox -->
+                    <br />
+                    <label for="mail">Email</label><br />
+                        <input type="email" id="mail" name="mail" onclick="validateEmail()"/><br /> <!-- Textbox -->
+                    <br />
+                            
+                    <input type="checkbox" id="join" name="join" value="join"> <!-- checkbox -->
+                        <label for="join">I would like to recieve text and email updates on company news and services.</label>
+                </fieldset>
+                
+                <br />
+
+                <fieldset>
+                    <legend>Vehicle Build</legend>
+                    <label for="vehicle_type">What kind of vehicle would you like us to build?</label>
+                    <br /> 
+                    <input type="radio" id="antique" name="vehicle_type" value="antique"> <!-- radio buttons -->
+                        <label for="antique">Antique</label><br />
+                    <input type="radio" id="coupe" name="vehicle_type" value="coupe"> <!-- radio buttons -->
+                        <label for="coupe">Coupe</label><br />
+                    <input type="radio" id="muscle" name="vehicle_type" value="muscle"> <!-- radio buttons -->
+                        <label for="muscle">Muscle Car</label><br />
+                    <input type="radio" id="racer" name="vehicle_type" value="racer"> <!-- radio buttons -->
+                        <label for="racer">Race Car</label>
+                    
+                <br />
+                <br />
+
+                    <label for="own">Do you own the vehicle you want to build?</label><br />
+                        <input type="radio" id="yes" name="own" value="yes"> <!-- radio buttons -->
+                            <label for="yes">Yes, I own the vehicle I want to build.</label><br />
+                        <input type="radio" id="no" name="own" value="no"> <!-- radio buttons -->
+                            <label>No, I do not. Find me it for me, please.</label>
+
+                <br />
+                <br />
+                    
+                    <label for="start">When do you want to start the build?</label>
+                        <input type="date" id="start" name="start">
+
+                <br />
+                <br />
+
+                    <label for="num_vehicles">How many vehicles do you own?</label>
+                        <select id="num_vehicles" name="num_vehicles">
+                            <option value="" selected></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5+</option>
+                        </select> <!-- list box -->
+
+                <br />
+                <br />
+
+                    <label for="budget">What is your budget for this vehicle?</label><br />
+                        <input type="text" id="budget" name="budget" value="$"><br /> <!-- Textbox -->
+                    <br />
+                    <label for="dream">What is your dream vehicle?</label><br />
+                        <input type="text" id="dream" name="dream"><br /> <!-- Textbox -->
+                    <br />
+                    <label for="suggest">What is your vision for the vehicle?</label><br /> <!-- Text area -->
+                    <textarea id="suggest" name="suggest" rows="10" cols="30" placeholder="What are our expectations?"></textarea>
+                    <br />
+                </fieldset>
+
+                <br />
+                <br />
+
+                <div id="submit">
+                    <input type="submit" value="Submit" onclick="alert('Form successfully submitted!')"> &nbsp; &nbsp;
+                    <input type="reset" value="Reset">
+                </div>
+                <br />
+                <br />
+
+            </form>
+        </main>
+        
+        <footer>
+			<figcaption>
+				<p>
+                    Childers Speed Shop &nbsp; Lewisville, TX &copy; 2025 &nbsp; use this icon 
+                    <a href="mailto:thomas@childersspeedshop.com"><img src="images/jdd_email.png"></a>
+					 to email thomas@childersspeedshop.com <br /><br /> Last Updated: 05/11/2025</p>
+				<p id="current_date"></p>
+				<script>
+					//script to display the current time on the users computer
+					var now = new Date();
+					document.getElementById("current_date").innerHTML = now;
+				</script>
+			</figcaption>
+
+            <hr style="width: 100%;">
+
+            <div id="left_links">
+                <p><strong>Shop</strong></p>
+                <a href="index.html">Home</a><br /><br />
+                <a href="jdd_about.html">About Us</a><br /><br />
+                <a href="jdd_gallery.html">Gallery</a><br /><br />
+            </div>
+            <div id="center_links">
+                <p><strong>Contact Us</strong></p>
+                <a href="jdd_table.html">Services</a><br /><br />
+                <a href="jdd_contact.html">Contact Us</a><br /><br />
+                <a href="jdd_form.html">Build Form</a><br /><br />
+            </div>
+            <div id="right_links">
+                <p><strong>Resources</strong></p>
+                <a href="jdd_links.html">Links</a><br /><br />
+                <a href="jdd_design.html" target="_blank">Design Document</a><br /><br />
+                <a href="https://www.tccd.edu/">TCC - Home</a><br /><br />
+            </div>
+        </footer>
+    </body>
+</html

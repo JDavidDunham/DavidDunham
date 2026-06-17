@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 
+            Author:         David Dunham
+            Course:         ITSE 2302
+            Assignment:     LAB 5 (Final Project)
+            Date Created:   04/14/2025
+            Date Updated:   05/11/2025
+            File Name:      index.html
+            Description:    Individual Web Page assignment for Childers Speed Shop.
+        -->
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Childers Automotive Speed Shop - Home</title>
+        <link rel="stylesheet" href="jdd_reset.css">
+        <link rel="stylesheet" href="jdd_layout.css">
+        <link rel="stylesheet" href="jdd_styles.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/jdd_logo.png" id="logo" alt="Childers Speed Shop Logo" href="index.html">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="jdd_about.html">About Us</a>
+                <a href="jdd_contact.html">Contact Us</a>
+                <a href="jdd_gallery.html">Gallery</a>
+                <a href="jdd_table.html">Services</a>
+                <a href="jdd_form.html">Build Form</a>
+                <a href="jdd_links.html">Links</a>
+            </nav>
+        </header>
+
+        <article>
+
+            <h1 style="text-align: center;">Childers Speed Shop</h1>
+
+            <p>
+                Thank you for visiting Childers Speed Shop! We are glad you decided to check us out.
+                Feel free to take a look at all the services we could offer you to help you make your 
+                automotive dreams a reality. We are confident that the work we do will make us the right 
+                choice for you. We give you our personal satisfaction guarantee. We really do our best
+                just for you.
+            </p>
+
+            <h2 style="text-align: center;">User Experience</h2>
+
+            <p>
+                Just to give you the best online experience we can, the best way to view our site is on google chrome.
+                If there are any improvements we can make to our site, we would love your feedback. We do ur best to make
+                sure our site is easy to navigate as possible. If for some reason you think our site can improve, we would 
+                love to hear your feedback on our <a href="jdd_contact.html">contact page</a>.
+            </p>
+
+            <h3>Acceptable Use Policy</h2>
+
+            <ol id="aup">
+                <li><em>User based</em>:</li>
+                    <dd>
+                        Since our site uses your data to make your experience the best it can be, we wanted to inform 
+                        you ahead of time that the information you provide is very important to us. We would never 
+                        in any shape or form sell your information for our own profit or benefit. It is solely used
+                        for user experience for our customers and for us to learn more about how we can better serve you.
+                    </dd>
+
+                <li><em>Restricted Activities</em>:</li>
+                    <dd>
+                        You may not use our services in any way that breaches any local, national or international laws.
+                        All content on this site belongs to the owner of the business and is prohibited from commercial use
+                    </dd>
+
+                <li><em>General Use</em>:</li>
+                    <dd>
+                        You may not use any content on this site for phishing or engaging in identity theft of any kind.
+                    </dd>
+
+                <li><em>Images</em>:</li>
+                    <dd>
+                        You may not use any images on this site for personal gain or use in a commercial form.
+                        All images are copyright of the respective owner of this site.
+                    </dd>
+            </ol>
+
+        </article>
+
+        <footer>
+			<figcaption>
+				<p>
+                    Childers Speed Shop &nbsp; Lewisville, TX &copy; 2025 &nbsp; use this icon 
+                    <a href="mailto:thomas@childersspeedshop.com"><img src="images/jdd_email.png"></a>
+					 to email thomas@childersspeedshop.com <br /><br /> Last Updated: 05/11/2025</p>
+				<p id="current_date"></p>
+				<script>
+					//script to display the current time on the users computer
+					var now = new Date();
+					document.getElementById("current_date").innerHTML = now;
+				</script>
+			</figcaption>
+
+            <hr style="width: 100%;">
+
+            <div id="left_links">
+                <p><strong>Shop</strong></p>
+                <a href="index.html">Home</a><br /><br />
+                <a href="jdd_about.html">About Us</a><br /><br />
+                <a href="jdd_gallery.html">Gallery</a><br /><br />
+            </div>
+            <div id="center_links">
+                <p><strong>Contact Us</strong></p>
+                <a href="jdd_table.html">Services</a><br /><br />
+                <a href="jdd_contact.html">Contact Us</a><br /><br />
+                <a href="jdd_form.html">Build Form</a><br /><br />
+            </div>
+            <div id="right_links">
+                <p><strong>Resources</strong></p>
+                <a href="jdd_links.html">Links</a><br /><br />
+                <a href="jdd_design.html" target="_blank">Design Document</a><br /><br />
+                <a href="https://www.tccd.edu/">TCC - Home</a><br /><br />
+            </div>
+        </footer>
+    </body>
+</html>

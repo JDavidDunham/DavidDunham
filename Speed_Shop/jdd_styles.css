@@ -1,0 +1,72 @@
+/* 
+Author:         David Dunham
+Course:         ITSE 2302 - 21001
+Assignment:     LAB 5 (Final Project)
+Date Created:   04/14/2025
+Date Updated:   04/14/2025
+File Name:      jdd_styles.css
+Description:    CSS Color Styles Page for Childers Speed Shop.
+*/
+
+/* 	=====================================================================
+				              Color Styles
+	=====================================================================
+*/
+
+html {
+    background-color: #000000;
+}
+
+body {
+    background-color: #808080;
+    color: #ffffff;
+}
+
+header {
+    background-color: #000000;
+    border-bottom: 5px solid #000000;
+}
+
+nav a {
+    background-color: #008000;
+}
+
+#back {
+    background-image: url(images/jdd_back_img.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+.internal a {
+    background-color: #008000;
+}
+
+#clock {
+    background-color: #008000;
+    color:#dbdb16;
+    border: 1px solid #000000;
+}
+
+hr {
+    background-color: #ffffff;
+}
+
+a {
+    color: #dbdb16;
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+figcaption {
+    background-color: #000000;
+    border-top: 5px solid #008000;
+}
