@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Dunham | Contact Me</title>
+    <link rel="stylesheet" href="files/styles.css">
+    <script src="files/main.js" defer></script>
+  </head>
+
+  <body>
+
+    <header>
+    
+      <nav class="nav">
+        <h1 class="logo">Contact Me</h1>
+        
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+       
+        <button class="theme-toggle">
+          <span class="toggle-icon">🌙</span>
+        </button>
+
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+  
+      </nav>
+
+    </header>
+
+    <section class="contact">
+
+      <form action="https://formspree.io/f/DAVIDDUNHAM" method="POST">
+
+        <div class="contact-form">
+
+          <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="John Smith" required>
+          <br/>
+          
+          <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="john@company.com" required>
+          <br/>
+          
+          <label for="message">Message:</label>
+            <textarea name="message" placeholder="Your Message" rows="8" cols="21" required></textarea>
+          <br/>
+
+          <button type="submit" class="btn primary">Send Message</button>
+
+        </div>
+      
+      </form>
+
+    </section>
+  </body>
+</html>

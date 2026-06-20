@@ -1,0 +1,340 @@
+/*  ======================================
+    Title:        Portfolio Website Stylesheet
+    Author:       David Dunham
+    Last Updated: June 2026
+    File Name:    styles.css
+    Description:  Clean, modern styles for a personal portfolio website.
+    ======================================
+*/
+
+/* ======================
+    Body Styles
+====================== */
+
+body {
+  margin: 0;
+  background: #0D0D0D;
+  color: #EAEAEA;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ======================
+    Navigation Styles
+====================== */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #0D0D0D;
+}
+
+.nav-links.open {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav a {
+  color: #EAEAEA;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ======================
+    Hero Section Styles
+====================== */
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  align-items: center;
+  margin: 10px;
+}
+
+.primary {
+  background: #4F8BFF;
+  color: #fff;
+}
+
+.secondary {
+  background: #1A1A1A;
+  color: #EAEAEA;
+  border: 2px solid #EAEAEA;
+}
+
+/* ======================
+    About Styles
+====================== */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  float: right;
+  max-width: 950px;
+  padding: 20px;
+}
+
+#profile {
+  display: flex; 
+  float: left; 
+  margin-right: 20px;
+}
+
+/* ======================
+    Projects Styles
+====================== */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 20px;
+}
+
+.project-card {
+  background: #1A1A1A;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(79,139,255,0.4), transparent 60%);
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(79,139,255,0.25);
+}
+
+.project-card img {
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ======================
+    Case Study Styles
+====================== */
+
+.case-study {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.case-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ======================
+    Contact Styles
+====================== */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  max-width: 300px;
+  margin: auto;
+}
+
+/* ======================
+    Responsive Styles
+====================== */
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  .nav-links.open ul {
+    max-height: 300px;
+    opacity: 1;
+  }
+}
+
+/* =========================
+    Light Mode Overrides 
+========================= */
+body.light-mode {
+  background: #f5f5f5;
+  color: #1A1A1A;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode .nav {
+  background: #FFFFFF;
+}
+
+body.light-mode .nav a {
+  color: #1A1A1A;
+}
+
+body.light-mode .project-card {
+  background: #FFFFFF;
+  border-color: #DDDDDD;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+body.light-mode .btn.secondary {
+  background: #E0E0E0;
+  color: #1A1A1A;
+}
+
+body.light-mode .skill-card {
+  background: #FFFFFF;
+  border-color: #DDDDDD;
+}
+
+body.light-mode .toggle-icon {
+  filter: invert(1);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  color: #EAEAEA;
+  transition: transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.2);
+}
+
+body.light-mode .theme-toggle {
+  color: #1A1A1A;
+}
+
+/* ============================
+   MOBILE NAVIGATION BUTTON
+============================ */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.menu-btn span {
+  width: 28px;
+  height: 3px;
+  background: #EAEAEA;
+  transition: 0.3s ease;
+}
+
+/* Animate into an X when open */
+.menu-btn.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ============================
+   MOBILE NAVIGATION DROPDOWN
+============================ */
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    background: #1A1A1A;
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 
+      max-height 0.4s ease,
+      opacity 0.4s ease,
+      transform 0.4s ease;
+  }
+
+  .nav-links.open {
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+}
