@@ -1,0 +1,235 @@
+/*
+    Name:         	David Dunham
+    Course:         INEW 2434-21001
+    Assignment:		LAB 1 - SamFord
+    Date:			03/04/2026
+    File Name:		SamFord.css
+    Description: 
+*/
+
+
+/*  ================================
+                HTML Styles
+    ================================
+*/
+
+html {
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+/*  ===============================
+            Body Styles
+    ===============================
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/*  ================================
+            Header Styles 
+    ================================
+*/
+
+header {
+    background-color: #e5e5e5;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+header img {
+    width:100%; 
+    height:auto;
+}
+
+/*  ===============================
+            Navigation Styles
+    ===============================
+*/
+
+.main_nav {
+    background-color: #003399;
+    padding: 10px 0;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.main_nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main_nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.main_nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.button-nav {
+    background-color: #cccccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.main_nav a:hover {
+    text-decoration: underline;
+}
+
+/*  ===============================
+        Section / Main Styles
+    ===============================
+*/
+
+table {
+    width: 100%;
+    border: none !important;
+    text-align: center;
+}
+
+tbody, tr, th, td {
+    border: none !important;
+    padding: 10px;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+#about, #phpInfo {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.history h1, .phpText h1 {
+    color: #003399;
+    margin-bottom: 15px;
+}
+
+.history p, .phpText p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#control_structures,
+#string_functions {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/*  ===============================
+            Footer Styles
+    ===============================
+*/
+
+footer {
+    background-color: #222;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*  ===============================
+        Page Links Styles
+    ===============================
+*/
+
+    /* Alternate text_links styles (if needed)
+
+    #text_links { background-color: #f2f2f2; }
+
+    #text_links a { color: #003399; }
+
+    Ford Dark Blue = #00274D;
+
+    */
+
+.text_links {
+    background-color: #003399;
+    border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.text_links ul, .home_links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.text_links li, .home_links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.text_links a {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.text_links a:hover, .home_links a:hover {
+    text-decoration: underline;
+}
+
+.home_links {
+    background-color: #f2f2f2;
+    padding: 8px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.home_links a {
+    color: #003399;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* ================================
+        Tablet Design Styles
+   ================================ 
+*/
+
+@media (max-width: 768px) {
+    .main-nav,
+    .button-nav,
+    .site-header,
+    .site-footer {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+}
